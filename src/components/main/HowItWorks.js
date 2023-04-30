@@ -4,18 +4,18 @@ const HowItWorks = () => {
     const [works,setworks]= useState([
         {
             id: 1,
-            title: 'Create a free account',
-            p: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.'
+            title: 'Create a free account with univercity Code',
+            p: ' For the first time you can create a free account with univercity code '
         },
         {
             id: 2,
-            title: 'Create a free account',
-            p: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.'
+            title: 'Check Your result Online ',
+            p: ' You can check your result online with Roll Number and year of passing'
         },
         {
             id: 3,
-            title: 'Create a free account',
-            p: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.'
+            title: ' Download Your Markshee',
+            p: ' You can download your marksheet online with Roll Number and year of passing And much more '
         },
     ])
     return (
