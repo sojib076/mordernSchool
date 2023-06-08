@@ -1,6 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import ScrollToTop from 'react-scroll-to-top';
 
 const BlogDetails = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to top of the page
+      }, []);
     const [comments, setComments] = useState([
         {
           id: 1,
@@ -36,6 +41,7 @@ const BlogDetails = () => {
     
     return (
         <div className="bg-white w-full">
+               <ScrollToTop smooth color="#6f00ff" className='p-2 m-2' />
             <div className=" mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
                 <div className="lg:grid lg:grid-cols-2 lg:gap-8">
                     <div className="lg:max-w-lg">
@@ -43,9 +49,13 @@ const BlogDetails = () => {
                     </div>
                     <div className="mt-10 lg:mt-0">
                         <div className="text-sm font-medium text-gray-500">
-                            <a href="#" className="hover:underline">
+                            <Link to={'/blog'} className="hover:underline">
+                                Blog
+                            </Link>
+                            <span className="mx-2">/</span>
+                            <Link to={'/'} className="hover:underline">
                                 Category
-                            </a>
+                            </Link>
                             <span className="mx-2">/</span>
                             <span>
                                 April 30, 2023

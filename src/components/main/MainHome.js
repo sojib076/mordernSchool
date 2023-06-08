@@ -1,4 +1,4 @@
-import Footer from "../Footer/Footer";
+
 import AllCourse from "./AllCourse";
 import Findcourse from "./Findcourse";
 import Newsletter from "./Newsletter";

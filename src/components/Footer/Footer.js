@@ -23,6 +23,7 @@ const Footer = () => {
                             <p className="text-gray-400 mb-2">Email: <a href="mailto:info@company.com" className="text-gray-400 hover:text-white">info@company.com</a></p>
                             <p className="text-gray-400 mb-2">Phone: <a href="tel:1234567890" className="text-gray-400 hover:text-white">(123) 456-7890</a></p>
                         </div>
+                       
                     </div>
                 </div>
             </footer>
